@@ -1,0 +1,80 @@
+ @import "../../styles.css";
+
+ .names{
+  margin-left: 20px;
+  font-size: 30px;
+ }
+ header {
+    background-color: var(--ada-red);
+    display: flex;
+}
+.title-tm {
+    color: var(--ada-smoke-white);
+    font-size: 40px;
+}
+.container {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.members-picture {
+  width: 250px;
+  height: 250px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  border: var(--ada-blue) 5px solid;
+  border-radius: 30px;
+}
+.text-1 {
+    font-size: 20px;
+    width: 65%;
+    background-color: var(--ada-blue);
+    padding: 15px;
+    float: right;
+    margin-right: 70px;
+    margin-top: 35px;
+    color: var(--ada-smoke-white);
+    border-radius: 20px;
+}
+.text-2 {
+    font-size: 20px;
+    width: 65%;
+    background-color: var(--ada-blue);
+    padding: 15px;
+    float: right;
+    margin-right: 70px;
+    margin-top: 11px;
+    color: var(--ada-smoke-white);
+    border-radius: 20px;
+}
+.text-3 {
+    font-size: 20px;
+    width: 65%;
+    background-color: var(--ada-blue);
+    padding: 15px;
+    float: right;
+    margin-right: 70px;
+    margin-top: 12px;
+    color: var(--ada-smoke-white);
+    border-radius: 20px;
+}
+.text-4 {
+    font-size: 20px;
+    width: 65%;
+    background-color: var(--ada-blue);
+    padding: 15px;
+    float: right;
+    margin-right: 70px;
+    margin-top: 65px;
+    color: var(--ada-smoke-white);
+    border-radius: 20px;
+}
+header {
+    color: var(--ada-red);
+    display: flex;
+}
+footer {
+    margin-top: 15px;
+}
+

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!-- 
+    SITE 1101 Principles of Information Systems 
+    (c)2024 by Fidan Khalilova (BSIT 2028)
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html>
+  <head>
+    <title>Website project</title>
+    <link rel="stylesheet" href="web-project.css" />
+    <script src="web-project.js"></script>
+    <script defer type="text/javascript" src="../../main.js"></script>
+    <link
+      rel="icon"
+      href="../../assets/logo/hw03-logo.png"
+      type="image/icon type"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="header__container">
+        <button class="button" id="burgerButton">Contents</button>
+        <div class="web-project-title">
+          <p><strong>Website Project - by Team 05 ⚡️</strong></p>
+        </div>
+
+        <div style="height: inherit">
+          <a href="/index.html">
+            <img
+              class="header__logo"
+              src="../../assets/logo/ada_logo_white.png"
+              alt="logo"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div id="clickout" class="clickout"></div>
+    <nav id="navigation" class="navigation">
+      <div class="navigation__container">
+        <h2>Contents</h2>
+
+        <div>
+          <ul class="navigation__links">
+            <li>
+              <a href="../team-members/team-members.html">Our Team</a>
+            </li>
+            <li>
+              <a href="../hour-of-code/hour-of-code.html">Hour of Code</a>
+            </li>
+            <li>
+              <a href="../web-project/web-project.html">Web Project</a>
+            </li>
+            <li>
+              <a href="../code-artist/code-artist.html">Code art (feat. Araz Yusubov)</a>
+            </li>
+            <li>
+              <a href="../../index.html">Home page</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="button navigation__button" id="navButton">Close</button>
+      </div>
+    </nav>
+
+    <div class="container">
+      <main>
+        <div class="title"><p>About Our Work</p></div>
+
+        <div class="about-our-work-context">
+          <p>
+            Our web project assignment has been an excellent opportunity to apply the skills 
+            we learned during our previous Codecademy coursework. By utilizing our knowledge 
+            of HTML, CSS, and JavaScript, we are collaboratively developing a functional and 
+            visually appealing website. The power of teamwork has been central to our progress, 
+            as each team member brings unique perspectives and skills that enrich the project. 
+            For instance, some of us focused on coding responsive layouts, while others ensured 
+            the functionality of interactive features. Through open communication and mutual 
+            support, we’ve overcome challenges more efficiently than working alone. Our shared 
+            experience with Codecademy provided a strong foundation, enabling us to divide tasks
+             effectively and meet deadlines. The project also highlights how collaboration can 
+             lead to creative solutions and enhance our learning. By combining individual efforts, 
+             we’re creating something more impactful than any of us could achieve alone. 
+             Overall, this experience emphasizes the value of both teamwork and a solid educational 
+             base.
+          </p>
+        </div>
+        <br>
+        <table>
+          <tr>
+            <td style="width: 60%">
+              <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div id="slide1" class="mySlides fade">
+                  <div class="numbertext">1 / 4</div>
+                  <img
+                    src="../web-project/web-project-slideshow-pics/fidan_working.jpeg"
+                    style="width: 100%"
+                  />
+                  <div class="text-1">Fidan is debuging the files</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 4</div>
+                  <img
+                    src="../web-project/web-project-slideshow-pics/asma-working.jpeg"
+                    style="width: 100%"
+                  />
+                  <div class="text-2">Asma is building Hour Of Code page</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 4</div>
+                  <img
+                    src="../web-project/web-project-slideshow-pics/nazli_working.jpeg"
+                    style="width: 100%"
+                  />
+                  <div class="text-1">Nazli while working on Team Page</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">4 / 4</div>
+                  <img
+                    src="../web-project/web-project-slideshow-pics/egor_working.png"
+                    style="width: 100%; object-fit: cover;"
+                  />
+                  <div class="text-2">Egor thinking about Code Art</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br />
+
+              <!-- The dots/circles -->
+              <div style="text-align: center" class="dots-for-slides">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+              </div>
+            </td>
+            <td>
+              <div class="about-our-work-context-2">
+                <p class="title-division">
+                  Division of the teamwork
+                </p>
+                <br>
+                <ul>
+                  <li>Fidan Khalilova (BSIT 2028) - Website Project</li>
+                  <li>Asma Hajizada (BSM 2028) - Hour of Code</li>
+                  <li>Nazli Nasirli (BSM 2028) - Meet Our Team</li>
+                  <li>Egor Martynov (BSIT 2028) - Main + Code Art</li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <!--Gallery for Codeacademy Profiles-->
+        <div class="title-codecademy"><p>Codecademy Profiles</p></div>
+        <div class="info-codecademy">
+          <p>
+            When you click on the images, you'll be redirected to the individual 
+            Codecademy profiles associated with each user. This allows you to explore 
+            their achievements, projects, and learning progress in detail. It's a 
+            convenient way to connect with and learn from others in the Codecademy 
+            community.
+          </p>
+        </div>
+        <div class="image-gallery-all">
+          <div class="responsive">
+            <div class="gallery">
+              <a
+                href="https://www.codecademy.com/profiles/fkhalilova21468"
+                target="_blank"
+              >
+                <img
+                  src="../../assets/team-members/fidan_picture.jpeg"
+                  alt="fidan_khalilova"
+                  width="600"
+                  height="400"
+                />
+              </a>
+              <div class="gallery__description">Fidan Khalilova</div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery">
+              <a
+                href="https://www.codecademy.com/profiles/AsmaHajizada"
+                target="_blank"
+              >
+                <img
+                  src="../../assets/team-members/asma_picture.jpeg"
+                  alt="asma_hajizada"
+                  width="600"
+                  height="400"
+                />
+              </a>
+              <div class="gallery__description">Asma Hajizada</div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery">
+              <a
+                href="https://www.codecademy.com/profiles/NazliNasirli"
+                target="_blank"
+              >
+                <img
+                  src="../../assets/team-members/nazli_picture.jpeg"
+                  alt="nazli_nasirli"
+                  width="600"
+                  height="400"
+                />
+              </a>
+              <div class="gallery__description">Nazli Nasirli</div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery">
+              <a
+                href="https://www.codecademy.com/profiles/emartynov782"
+                target="_blank"
+              >
+                <img
+                  src="../../assets/team-members/egor_photo.jpeg"
+                  alt="egor_martynov"
+                  width="600"
+                  height="400"
+                />
+              </a>
+              <div class="gallery__description">Egor Martynov</div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!--Footer-->
+      <footer>
+        <p><a href="../../index.html"><img src="../../assets/logo/ada_logo_white.png" alt="ADA LOGO" /></a></p>
+        <p>ADA University | SITE 1101 | 2024</p>
+      </footer>
+    </div>
+  </body>
+</html>

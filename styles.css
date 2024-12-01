@@ -1,0 +1,157 @@
+:root {
+  --ada-blue: #336178;
+  --ada-red: #ae485e;
+  --ada-light-red: #f3e2e6;
+  --ada-light-blue: #c4cdd4;
+  --ada-smoke-white: #f5f5f5;
+}
+
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  background-color: var(--ada-smoke-white);
+}
+header {
+  background-color: var(--ada-red);
+  display: flex;
+}
+h1 {
+  padding-left: 10px;
+  font-size: 40px;
+  color: var(--ada-smoke-white);
+}
+.welcome__word {
+  font-size: 2rem;
+  padding: 2px;
+}
+.welcome__paragraph {
+  width: 80%;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.name-links {
+  text-decoration: none;
+  color: var(--ada-blue);
+}
+.header__container {
+  width: 95%;
+  margin: 24px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 72px;
+}
+
+.header__logo {
+  height: 100%;
+  object-fit: contain;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  width: 332px;
+  height: 100vh;
+  z-index: 2;
+  left: -400px;
+  transition: left 0.3s ease;
+  background-color: var(--ada-blue);
+  color: var(--ada-smoke-white);
+}
+
+.navigation__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.navigation a {
+  color: var(--ada-smoke-white);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.navigation.active {
+  left: 0;
+}
+
+.navigation ul {
+  list-style-type: none;
+}
+
+.navigation__container {
+  width: fit-content;
+  margin: 14px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 24px;
+}
+
+.button {
+  background-color: var(--ada-blue);
+  border: none;
+  border-radius: 12px;
+  padding-bottom: 1px;
+  color: var(--ada-smoke-white);
+  width: 100px;
+  height: 48px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--ada-smoke-white); /* Green */
+  color: var(--ada-blue);
+  box-shadow: 1px 2px 4px #c9c4c4;
+}
+
+.navigation__button {
+  background-color: var(--ada-smoke-white);
+  color: var(--ada-blue);
+  border: none;
+}
+.navigation__button:hover {
+  background-color: #274a5c;
+  color: var(--ada-smoke-white);
+  box-shadow: none;
+  border: none;
+}
+.clickout {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.clickout.active {
+  display: block;
+}
+
+footer {
+  height: 100px;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  background-color: var(--ada-red);
+  color: var(--ada-light-red);
+  text-align: center;
+  padding-top: 15px;
+}
+
+footer img {
+  width: 45px;
+  height: 33px;
+}

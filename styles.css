@@ -14,33 +14,23 @@
 }
 
 body {
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: var(--ada-smoke-white);
 }
-header {
-  background-color: var(--ada-red);
-  display: flex;
-}
-h1 {
-  padding-left: 10px;
-  font-size: 40px;
-  color: var(--ada-smoke-white);
-}
-.welcome__word {
-  font-size: 2rem;
-  padding: 2px;
-}
+
 .welcome__paragraph {
-  width: 80%;
   font-size: 1.2rem;
   line-height: 1.5rem;
-  text-align: left;
+  text-align: center;
   margin-bottom: 2rem;
+  max-width: 600px;
 }
-.name-links {
-  text-decoration: none;
-  color: var(--ada-blue);
+
+.welcome__paragraph :nth-of-type(1){
+  margin-top: 40px;
 }
+
 .header__container {
   width: 95%;
   margin: 24px auto;
@@ -58,7 +48,7 @@ h1 {
 .navigation {
   position: fixed;
   top: 0;
-  width: 332px;
+  width: 356px;
   height: 100vh;
   z-index: 2;
   left: -400px;
@@ -145,10 +135,10 @@ footer {
   height: 100px;
   flex-shrink: 0;
   justify-content: flex-start;
-  background-color: var(--ada-red);
-  color: var(--ada-light-red);
   text-align: center;
-  padding-top: 15px;
+  color: var(--ada-smoke-white);
+  background-color: var(--ada-blue);
+  padding-top: 20px;
 }
 
 footer img {
